@@ -4,6 +4,7 @@ let imageContainerEl = document.getElementById("imageContainer");
 
 let cartMessageEl;
 let quantityEl;
+let productImgEl;
 
 let formData = {
     color: "",
@@ -23,7 +24,7 @@ function createAndAppendResources(jsonData) {
     } = jsonData.product;
     //image container
 
-    let productImgEl = document.createElement("img");
+    productImgEl = document.createElement("img");
     productImgEl.src = images[0].src;
     productImgEl.alt = "image";
     productImgEl.classList.add("product-image-style");
@@ -37,6 +38,9 @@ function createAndAppendResources(jsonData) {
         imgEl.alt = "image";
         imgEl.classList.add("thumbnail-image-style");
         thumbnailContainerEl.appendChild(imgEl);
+        imgEl.onclick= function(){
+            productImgEl.src=Object.values(image)[0];
+        };
     }
     //form elements
 
