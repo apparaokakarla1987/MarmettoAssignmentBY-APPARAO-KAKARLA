@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+
+.bg-container {
+    background-color: white;
+    padding: 1.5vw;
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+}
+
+.image-container {
+    display: flex;
+    flex-direction: row;
+    padding: 1.5vw;
+    width: 45%;
+}
+
+.thumbnail-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.text-container {
+    background-color: white;
+    padding: 1vw;
+    width: 50%;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.product-image-style {
+    width: 35vw;
+}
+
+.thumbnail-image-style {
+    width: 5vw;
+    margin-left: 2vw;
+}
+
+.product-vendor-heading {
+    color: #dee0e3;
+    font-family: "Roboto";
+    font-size: 3vw;
+    font-weight: 300;
+}
+
+.product-title-heading {
+    color: black;
+    font-family: "Roboto";
+    font-size: 5vw;
+    font-weight: 300;
+}
+
+.line {
+    width: 100%;
+}
+
+.price-heading {
+    color: #1d4382;
+    font-family: "Roboto";
+    font-size: 5vw;
+    font-weight: bold;
+}
+
+.percentage-style {
+    color: #e04436;
+    font-family: "Roboto";
+    font-size: 3vw;
+    font-weight: bold;
+
+}
+
+.comparePrice-heading {
+    color: #4e4f4f;
+    font-family: "Roboto";
+    font-size: 5vw;
+    font-weight: 300;
+    text-decoration: line-through;
+}
+
+.color-selector-heading {
+    color: #dee0e3;
+    font-family: "Roboto";
+    font-size: 3vw;
+    font-weight: bold;
+}
+
+.color-box-container {
+    display: flex;
+}
+
+.color-box {
+    border: 0px solid pink;
+    width: 20vw;
+    height: 10vw;
+    background-color: pink;
+    font-family: "Roboto";
+    font-size: 2vw;
+    font-weight: 100;
+    padding: 1.5vw;
+    margin-right: 1vw;
+    cursor: pointer;
+    margin: 10px;
+}
+
+.tick-image {
+    width: 5vw;
+    height: 5vw;
+}
+
+.color-box-selected {
+    background-color: red;
+}
+
+.choose-size-heading {
+    color: #dee0e3;
+    font-family: "Roboto";
+    font-size: 3vw;
+    font-weight: bold;
+}
+
+.size-box-container {
+    display: flex;
+    margin-bottom: 2vw;
+}
+
+.radio-box-container {
+    display: flex;
+    margin-left: 2vw;
+    background-color: #dcdcde;
+    padding: 5px;
+}
+
+.label-style {
+    margin-left: 3vw;
+    color: black;
+    font-family: "Roboto";
+    font-size: 2vw;
+    font-weight: 300;
+    margin-top: auto;
+}
+
+.main-button-container {
+    display: flex;
+}
+
+.button-container {
+    display: flex;
+    background-color: lightgrey;
+    width: 20vw;
+    border-radius: 20px;
+}
+
+.minusButton {
+    border: 0px solid lightgrey;
+    width: 20vw;
+    height: 5vw;
+    color: black;
+    font-family: "Roboto";
+    font-size: 4vw;
+    font-weight: 100;
+    padding: 1vw;
+    margin-right: 1vw;
+    cursor: pointer;
+    border-radius: 20px;
+    background-color: lightgrey;
+    margin: auto;
+
+}
+
+.quantity-style {
+    color: black;
+    font-family: "Roboto";
+    font-size: 3vw;
+    font-weight: 300;
+    background-color: lightgrey;
+    margin: auto;
+}
+
+.add-cart-button {
+    background-color: #305796;
+    color: white;
+    font-family: "Roboto";
+    font-size: 3vw;
+    font-weight: 300;
+    width: 20vw;
+    height: 10vw;
+}
+
+.cart-message {
+    color: black;
+    font-family: "Roboto";
+    font-size: 3vw;
+    font-weight: 500;
+    padding: 2vw;
+}
+
+.cart-message-update {
+    color: black;
+    font-family: "Roboto";
+    font-size: 3vw;
+    font-weight: 500;
+    padding: 2vw;
+    background-color: #53d475;
+}
+
+.description {
+    color: #dee0e3;
+    font-family: "Roboto";
+    font-size: 3vw;
+    font-weight: 500;
+}
