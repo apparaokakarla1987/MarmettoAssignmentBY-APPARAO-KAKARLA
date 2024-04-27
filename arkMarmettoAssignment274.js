@@ -38,8 +38,8 @@ function createAndAppendResources(jsonData) {
         imgEl.alt = "image";
         imgEl.classList.add("thumbnail-image-style");
         thumbnailContainerEl.appendChild(imgEl);
-        imgEl.onclick= function(){
-            productImgEl.src=Object.values(image)[0];
+        imgEl.onclick = function() {
+            productImgEl.src = Object.values(image)[0];
         };
     }
     //form elements
@@ -71,7 +71,7 @@ function createAndAppendResources(jsonData) {
     let percentageEl = document.createElement("span");
     let a = parseInt(price.slice(1, price.length));
     let b = parseInt(compare_at_price.slice(1, compare_at_price.length));
-    let percentage = Math.ceil((b - a) * 100 / b);
+    let percentage = Math.floor((b - a) * 100 / b);
     percentageEl.textContent = `${percentage}% Off`;
     percentageEl.classList.add("percentage-style");
     formContainerEl.appendChild(percentageEl);
@@ -154,9 +154,7 @@ function createAndAppendResources(jsonData) {
         radioContainerEl.appendChild(inputRadioEl);
 
         //Event listener for radio input
-        inputRadioEl.addEventListener("change", function(event) {
-            formData.size = event.target.value;
-        });
+
 
         //label Element
         let labelEl = document.createElement("label");
@@ -164,6 +162,10 @@ function createAndAppendResources(jsonData) {
         labelEl.textContent = size;
         labelEl.classList.add("label-style");
         radioContainerEl.appendChild(labelEl);
+
+        inputRadioEl.addEventListener("change", function(event) {
+            formData.size = size;
+        });
     }
 
     //Quantity Selector
